@@ -1,0 +1,22 @@
+# this file would be instrumental in installation of all the required packages
+# after running a git bash command of activation of the virtual environment 
+# >>> $pip install -r requirements.txt 
+
+tensorflow
+pandas
+dvc
+notebook
+numpy
+matplotlib
+seaborn
+python-box == 6.0.2
+pyYAML
+tqdm
+ensure == 1.0.2
+joblib
+types-pyYAML
+scipy
+flask
+flask-Cors
+-e .
+
