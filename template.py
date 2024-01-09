@@ -1,3 +1,7 @@
+# This is a basic template of the required folder system for any industry level project.
+# 
+
+
 import os
 from pathlib import Path
 import logging
@@ -7,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 project_name = "cnnClassifier"
 
 list_of_files = [
-    ".github/workflows/.gitkeep"        #content for empty folder
+    ".github/workflows/.gitkeep"        #content for empty folder it will have the main.yaml file that would be instr umental in CI/CD implemntation 
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/utils/__init__.py",
@@ -27,7 +31,7 @@ list_of_files = [
 ]
 
 for filepath in list_of_files:
-    filepath = Path(filepath)
+    filepath = Path(filepath)   # path converts the given path according to the operating system
     filedir, filename = os.path.split(filepath)
 
     if filedir !="":
